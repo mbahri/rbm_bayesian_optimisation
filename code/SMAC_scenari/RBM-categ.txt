@@ -1,0 +1,5 @@
+use-instances = false
+numberOfRunsLimit = 100 
+runObj = QUALITY
+pcs-file = rbm_categ.pcs
+algo = ./wrapper.sh

@@ -1,0 +1,572 @@
+14:07:42.348 [main] INFO  c.u.c.b.a.l.ComplexLoggingOptions - Logging to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/log-run1300.txt
+14:07:42.356 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Algorithm Execution & Abstraction Toolkit is v2.10.03-master-814 (ebf4c8c913d5) 
+14:07:42.356 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Java Runtime Environment is Java HotSpot(TM) 64-Bit Server VM (1.7.0_79) 
+14:07:42.356 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of OS is Linux 3.13.0-63-generic (amd64) 
+14:07:42.356 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Random Forest Library is v1.10.01-master-120 (b68439c2c391) 
+14:07:42.356 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of SMAC is v2.10.03-master-778 (3ee628ef9bf2) 
+14:07:42.356 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - Call String: smac --scenario-file RBM-integ.txt --seed 1300 
+14:07:42.357 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ********** The next bit of output can be ignored, it is merely useful for debugging **********
+14:07:42.357 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========Enviroment Variables===========
+ARCH=x86_64
+CLUTTER_IM_MODULE=xim
+COLORTERM=gnome-terminal
+COMPIZ_BIN_PATH=/usr/bin/
+COMPIZ_CONFIG_PROFILE=ubuntu
+CWB=/vol/lab/mac/CWB7.0
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-VhBjE2ddO5
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DESKTOP_SESSION=ubuntu
+DISPLAY=:0
+EDITOR=nedit
+EXCONFIG=/vol/lab/mac/lib/exercise.cf
+GDMSESSION=ubuntu
+GDM_XSERVER_LOCATION=local
+GETPATH=/vol/lab/mac/give:/vol/lab/give:/vol/lab/lib:/vol/lab/include
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/terminator.desktop
+GIO_LAUNCHED_DESKTOP_FILE_PID=20981
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GNOME_KEYRING_CONTROL=/run/user/11916/keyring-bNesjD
+GNOME_KEYRING_PID=18789
+GPG_AGENT_INFO=/run/user/11916/keyring-bNesjD/gpg:0:1
+GROUPDIR=/vol/lab/mac
+GTK_IM_MODULE=ibus
+GTK_MODULES=overlay-scrollbar
+HISTSIZ=500
+HOME=/homes/mb2215
+IGNOREEOF=1
+IM_CONFIG_PHASE=1
+INSTANCE=
+JOB=dbus
+KRB5CCNAME=FILE:/tmp/krb5cc_11916_Z2doaJ
+LANG=en_GB.UTF-8
+LOCALLAB=/vol/lab
+LOGNAME=mb2215
+MAIL=/homes/mb2215/.email
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+MANPATH=/vol/lab/man:/vol/lab/mac/cadence/smv/man:/vol/lab/qp8.6/doc/man:/usr/share/man:/usr/local/man:/vol/lab/mac/doc/man
+MDMSESSION=ubuntu
+MDM_LANG=en_GB.UTF-8
+MDM_XSERVER_LOCATION=local
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NSS_DEFAULT_DB_TYPE=sql
+ORBIT_SOCKETDIR=/tmp/orbit-mb2215
+OS=Linux
+OTTER_DOC=/usr/share/doc/otter/
+OTTER_EX=/usr/share/otter/examples/
+PATH=/homes/mb2215/.virtualenvs/scientific_python/bin:/homes/mb2215/.virtualenvs/scientific_python/bin:/vol/lab/CLASP:/vol/lab/mac/cadence/smv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/vol/lab/mac/bin:/bin:/vol/lab/bin:/vol/lab/bin/Linux/x86_64:/vol/lab/qp8.6/bin:/vol/lab/satsolvers/bin:/vol/lab/satsolvers/bin/
+PGHOST=db
+PGPASSWORD=lab
+PGPORT=5432
+PGUSER=lab
+PRINTER=ICTMono
+PWD=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+QPHOME=/vol/lab/qp8.6
+QPPATH=/vol/lab/qp8.6/bin
+QT4_IM_MODULE=ibus
+QTDIR=/usr/lib/qt3
+QT_IM_MODULE=ibus
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+SELINUX_INIT=YES
+SESSION=ubuntu
+SESSIONTYPE=gnome-session
+SESSION_MANAGER=local/line11.doc.ic.ac.uk:@/tmp/.ICE-unix/19064,unix/line11.doc.ic.ac.uk:/tmp/.ICE-unix/19064
+SHELL=/bin/bash
+SHLVL=2
+SSH_AUTH_SOCK=/run/user/11916/keyring-bNesjD/ssh
+STY=21210.pts-0.line11
+TERM=screen
+TERMCAP=SC|screen|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#68:co#230:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mr=\E[7m:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:Km=\E[M:k0=\E[10~:k1=\EOP:k2=\EOQ:\
+	:k3=\EOR:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:\
+	:k8=\E[19~:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:\
+	:F3=\E[1;2P:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:\
+	:F7=\E[15;2~:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:\
+	:K2=\EOE:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:\
+	:*7=\E[1;2F:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:\
+	:%e=\E[5;2~:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:\
+	:@7=\E[4~:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:\
+	:kd=\EOB:kr=\EOC:kl=\EOD:km:
+TERMINATOR_UUID=urn:uuid:08bc97c9-0d3a-41d6-a244-1b8d1f4a3cbc
+TEXINPUTS=.:/vol/lab/tex/inputs:
+TEXTDOMAIN=im-config
+TEXTDOMAINDIR=/usr/share/locale/
+TMOUT=0
+UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/11916/18816
+USER=mb2215
+USERNAME=mb2215
+USE_EDITOR=nedit
+VIRTUALENVWRAPPER_HOOK_DIR=/homes/mb2215/.virtualenvs
+VIRTUALENVWRAPPER_PROJECT_FILENAME=.project
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+VIRTUAL_ENV=/homes/mb2215/.virtualenvs/scientific_python
+VISUAL=nedit
+WINDOW=0
+WINDOWID=65011716
+WINDOWPATH=8
+WORKON_HOME=/homes/mb2215/.virtualenvs
+XAUTHORITY=/tmp/.mdm8T587X
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP=Unity
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/
+XDG_MENU_PREFIX=gnome-
+XDG_RUNTIME_DIR=/run/user/11916
+XDG_SEAT=seat0
+XDG_SESSION_COOKIE=2d56b2c2c29f1750a66fd63c53a1b52d-1447852672.475785-605339316
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_ID=381
+XDG_VTNR=8
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+XMODIFIERS=@im=ibus
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+more=/bin/more
+
+14:07:42.357 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Hostname:line11.doc.ic.ac.uk
+14:07:42.357 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========System Properties==============
+ERRLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/log-err1300.txt
+NUMRUN=1300
+OUTPUTDIR=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ
+ROOT-LEVEL=INFO
+RUNLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/log-run1300.txt
+STDOUT-LEVEL=INFO
+WARNLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/log-warn1300.txt
+awt.toolkit=sun.awt.X11.XToolkit
+file.encoding=UTF-8
+file.encoding.pkg=sun.io
+file.separator=/
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.awt.printerjob=sun.print.PSPrinterJob
+java.class.path=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/conf/:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/patches/:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/aeatk.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/aeatk-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-collections-3.2.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-collections-3.2.1-sources.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-io-2.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-math-2.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-math3-3.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/DomainInter.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/exp4j-0.3.10.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/exp4j-0.4.3.BETA-3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/fastrf.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/fastrf-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/guava-14.0.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-annotations-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-core-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-databind-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/Jama-1.0.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcip-annotations.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcip-annotations-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcommander.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jmatharray.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-access-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-classic-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-core-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/numerics4j-1.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/opencsv-2.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/slf4j-api-1.7.5.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/smac.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/smac-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/spi-0.2.4.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/*.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/patches/
+java.class.version=51.0
+java.endorsed.dirs=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/endorsed
+java.ext.dirs=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/ext:/usr/java/packages/lib/ext
+java.home=/usr/lib/jvm/jdk-7-oracle-x64/jre
+java.io.tmpdir=/tmp
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.runtime.name=Java(TM) SE Runtime Environment
+java.runtime.version=1.7.0_79-b15
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=1.7
+java.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+java.version=1.7.0_79
+java.vm.info=mixed mode
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.7
+java.vm.vendor=Oracle Corporation
+java.vm.version=24.79-b02
+line.separator=
+
+logback.configurationFile=ca/ubc/cs/beta/aeatk/logging/complex-logback.xml
+os.arch=amd64
+os.name=Linux
+os.version=3.13.0-63-generic
+path.separator=:
+sun.arch.data.model=64
+sun.boot.class.path=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/resources.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/rt.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jsse.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jce.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/charsets.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jfr.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/classes
+sun.boot.library.path=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/amd64
+sun.cpu.endian=little
+sun.cpu.isalist=
+sun.desktop=gnome
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ca.ubc.cs.beta.aeatk.ant.execscript.Launcher ca.ubc.cs.beta.smac.executors.SMACExecutor --scenario-file RBM-integ.txt --seed 1300
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=UTF-8
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=unknown
+user.country=GB
+user.dir=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+user.home=/homes/mb2215
+user.language=en
+user.name=mb2215
+user.timezone=Europe/London
+
+14:07:42.376 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - ==========Configuration Options==========
+[SMACOptions]
+ adaptiveCapping = false
+ alwaysRunInitialConfiguration = false
+ capAddSlack = 1.0
+ capSlack = 1.3
+classicInitModeOpts = [ClassicInitializationProcedureOptions]
+		 initialIncumbentRuns = 1
+
+dciModeOpts = [DoublingCappingInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+
+ucip = [UnbiasChallengerInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+		 cpulimit = 0
+
+ deterministicInstanceOrdering = false
+ doValidation = true
+ execMode = SMAC
+ experimentDir = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/
+ expFunc = null
+help = [HelpOptions]
+		 showHiddenParameters = false
+		 showHelp = false
+		 helpLevel = BASIC
+		 showVersion = false
+		 helpDefaults = /homes/mb2215/.aeatk/help.opt
+
+ initialChallengeRuns = 1
+ initialIncumbent = DEFAULT
+ initializationMode = CLASSIC
+ intensificationPercentage = 0.5
+ initialChallengers = []
+ initialChallengersIntensificationTime = 2147483647
+ iterativeCappingBreakOnFirstCompletion = false
+ iterativeCappingK = 1
+logOptions = [ComplexLoggingOptions]
+		 consoleLogLevel = INFO
+		 logLevel = INFO
+
+ maxIncumbentRuns = 2000
+mbOptions = [ModelBuildingOptions]
+		 maskCensoredDataAsKappaMax = false
+		 maskInactiveConditionalParametersAsDefaultValue = true
+		 maskCensoredDataAsUncensored = false
+		 imputationIterations = 2
+
+ modelHashCodeFile = null
+ numberOfChallengers = 10
+ numberOfRandomConfigsInEI = 10000
+ numberOfRandomConfigsUsedForLocalSearch = 0
+ numPCA = 7
+ optionFile = null
+ optionFile2 = null
+randomForestOptions = [RandomForestOptions]
+		 brokenVarianceCalculation = false
+		 freeMemoryPercentageToSubsample = 0.25
+		 fullTreeBootstrap = false
+		 ignoreConditionality = false
+		 imputeMean = false
+		 logModel = false
+		 minVariance = 1.0E-14
+		 numTrees = 10
+		 penalizeImputedValues = false
+		 preprocessMarginal = true
+		 ratioFeatures = 0.8333333333333334
+		 shuffleImputedValues = false
+		 splitMin = 10
+		 storeDataInLeaves = false
+		 subsamplePercentage = 0.9
+		 subsampleValuesWhenLowMemory = false
+
+runGroupOptions = [RunGroupOptions]
+		 runGroupName = %SCENARIO_NAME
+		 runGroupExit = false
+		 replacementChar = %
+
+scenarioConfig = [ScenarioOptions]
+		 _runObj = QUALITY
+		 intraInstanceObj = null
+		 interInstanceObj = MEAN
+		limitOptions = [TerminationCriteriaOptions]
+				 tunerTimeout = 2147483647
+				 numIterations = 2147483647
+				 runtimeLimit = 2147483647
+				 totalNumRunsLimit = 200
+				 countSMACTimeAsTunerTime = true
+				 challengeIncumbentAttempts = 1000
+				 fileToWatch = null
+
+		instanceOptions = [ProblemInstanceOptions]
+				 instanceFile = null
+				 instanceFeatureFile = null
+				 testInstanceFile = null
+				 checkInstanceFilesExist = false
+				 useInstances = false
+				 instanceSuffix = null
+				 testInstanceSuffix = null
+				 ignoreFeatures = false
+
+		 scenarioFile = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/RBM-integ.txt
+		 outputDirectory = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output
+		 invalidScenarioReason = null
+		algoExecOptions = [AlgorithmExecutionOptions]
+				 algoExec = ./wrapper.sh
+				 algoExecDir = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+				 deterministic = true
+				 cutoffTime = 1.7976931348623157E308
+				 cutoffLength = -1.0
+				 additionalContext = {}
+				taeOpts = [TargetAlgorithmEvaluatorOptions]
+						 targetAlgorithmEvaluator = CLI
+						 abortOnCrash = false
+						 abortOnFirstRunCrash = true
+						 retryCount = 0
+						 cacheRuns = false
+						 cacheDebug = false
+						 useDynamicCappingExclusively = false
+						 reportStrictlyIncreasingRuntimes = false
+						 boundRuns = false
+						 maxConcurrentAlgoExecs = 1
+						 exitOnFailure = false
+						 runHashCodeFile = null
+						 leakMemory = false
+						 leakMemoryAmount = 1024
+						 verifySAT = null
+						 checkSATConsistency = true
+						 checkSATConsistencyException = true
+						 callObserverBeforeCompletion = true
+						prePostOptions = [PrePostCommandOptions]
+								 preCommand = null
+								 postCommand = null
+								 exceptionOnError = false
+								 logOutput = true
+								 directory = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/.
+
+						 checkResultOrderConsistent = false
+						 skipOutstandingEvaluationsTAE = false
+						 logRequestResponses = false
+						 logRequestResponsesRCOnly = false
+						 trackRunsScheduled = false
+						 trackRunsScheduledResolution = 1.0
+						 uncleanShutdownCheck = true
+						 killCaptimeExceedingRun = true
+						 killCaptimeExceedingRunFactor = 10.0
+						 checkRunConfigsUnique = true
+						 checkRunConfigsUniqueException = true
+						 observeWalltimeIfNoRuntime = true
+						 observeWalltimeScale = 0.95
+						 observeWalltimeDelay = 5.0
+						 synchronousObserver = true
+						 taeDefaults = /homes/mb2215/.aeatk/tae.opt
+						ttaedo = [TransformTargetAlgorithmEvaluatorDecoratorOptions]
+								 transform = false
+								 transformValidValuesOnly = true
+								 SAT_runtime_transform = R
+								 SAT_quality_transform = Q
+								 UNSAT_runtime_transform = R
+								 UNSAT_quality_transform = Q
+								 TIMEOUT_runtime_transform = R
+								 TIMEOUT_quality_transform = Q
+								 other_runtime_transform = R
+								 other_quality_transform = Q
+
+						tForkOptions = [ForkingTargetAlgorithmEvaluatorDecoratorOptions]
+								 forkToTAE = null
+								fPolicyOptions = [ForkingTargetAlgorithmEvaluatorDecoratorPolicyOptions]
+										 fPolicy = null
+										 duplicateOnSlaveQuickTimeout = 5
+
+
+						 fileToWatch = null
+						 warnIfNoResponseFromTAE = 120
+						 taeStopProcessingOnShutdown = true
+						 filecache = false
+						 fileCacheSource = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/./runcache
+						 fileCacheOutput = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/./runcache
+						 fileCacheCrashOnMiss = false
+						 transformCrashedQuality = true
+						 transformCrashedQualityValue = 1.0E9
+						 filterZeroCutoffRuns = true
+
+				paramFileDelegate = [ParamConfigurationSpaceOptions]
+						 paramFile = rbm_integ.pcs
+						 searchSubspace = null
+						 searchSubspaceFile = null
+						 continuousNeighbours = 4
+
+
+
+seedOptions = [SeedOptions]
+		 seedOffset = 0
+		 numRun = 1300
+		 initialSeedMap = {}
+
+ smacDefaults = /homes/mb2215/.aeatk/smac.opt
+stateOpts = [StateFactoryOptions]
+		 stateSerializer = LEGACY
+		 statedeSerializer = LEGACY
+		 restoreStateFrom = null
+		 restoreIteration = null
+		 restoreScenario = null
+		 cleanOldStatesOnSuccess = true
+		 saveContextWithState = true
+
+trackingOptions = [ParamConfigurationOriginTrackingOptions]
+		 configTracking = false
+
+validationOptions = [ValidationOptions]
+		 maxTimestamp = -1.0
+		 minTimestamp = 0.0
+		 multFactor = 2.0
+		 numberOfTestInstances = 2147483647
+		 numberOfTestSeedsPerInstance = 1000
+		 numberOfValidationRuns = 1
+		 outputFileSuffix = 
+		 saveStateFile = false
+		 useWallClockTime = true
+		 validateAll = false
+		 validateOnlyIfTunerTimeReached = 0.0
+		 validateOnlyIfWallTimeReached = 0.0
+		 validateOnlyLastIncumbent = true
+		 validationHeaders = true
+		 validationRoundingMode = UP
+
+warmStartOptions = [WarmStartOptions]
+		 warmStartStateFrom = null
+		 restoreIteration = 2147483647
+
+ validationSeed = 0
+ saveRunsEveryIteration = false
+ stateQuickSaves = true
+ shutdownTAEWhenDone = true
+ validationCores = null
+ shareModelMode = false
+ shareRunDataFrequency = 300
+ shareModeModeTAE = true
+ writeRunData = true
+ defaultHandler = USE_ALL
+ sharedModeModeAssymetricMode = false
+
+[AnalyticTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ cores = 0
+ observerFrequency = 100
+ func = CAMELBACK
+ scaleDelay = 1.0
+
+[BlackHoleTargetAlgorithmEvaluatorOptions]
+ warnings = true
+
+[CommandLineTargetAlgorithmEvaluatorOptions]
+ observerFrequency = 500
+ concurrentExecution = true
+ cores = 1
+ logAllCallStrings = false
+ logAllResultLines = false
+ logAllCallsAndResultLines = false
+ logAllProcessOutput = false
+ listenForUpdates = true
+ paramArgumentsContainQuotes = false
+ pgEnvKillCommand = null
+ pgNiceKillCommand = bash -c "kill -s TERM -%pid"
+ pgForceKillCommand = bash -c "kill -s KILL -%pid"
+ procNiceKillCommand = kill -s TERM %pid
+ procForceKillCommand = kill -s KILL %pid
+ smacDefaults = /homes/mb2215/.aeatk/cli-tae.opt
+
+[ConstantTargetAlgorithmEvaluatorOptions]
+ runResult = SAT
+ runtime = 1.0
+ quality = 0.0
+ runlength = 0.0
+ additionalRunData = 
+
+[IPCTargetAlgorithmEvaluatorOptions]
+ persistent = false
+ ipcMechanism = UDP
+ encodingMechanism = CALL_STRING
+ remoteHost = 127.0.0.1
+ remotePort = 5050
+ udpPacketSize = 4096
+ localPort = 0
+ execScript = null
+ execScriptOutput = false
+ poolConnections = false
+ ipcDefaults = /homes/mb2215/.aeatk/ipc-tae.opt
+ asyncThreads = 9
+
+[PreloadedResponseTargetAlgorithmEvaluatorOptions]
+ preloadedResponses = 
+ runLength = -1.0
+ quality = 0.0
+ additionalRunData = 
+
+[RandomResponseTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ additionalRunData = 
+ cores = 0
+ maxResponse = 10.0
+ minResponse = 0.0
+ observerFrequency = 500
+ trendCoefficient = 0.0
+ seed = 1447855661632
+ persistent = false
+ scaleDelay = 1.0
+
+
+14:07:42.866 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - SMAC started at: 18-Nov-2015 14:07:42. Minimizing mean quality.
+14:12:06.210 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - First incumbent: config 1 (internal ID: 0x000B), with mean quality: 33.333333; estimate based on 1 runs.
+14:12:06.211 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 1 (internal ID: 0x000B): 
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '100' -decay '1.0E-4' -ep '250' -lr '0.05' -momentum '0.5' -nh '1000'  
+15:31:15.370 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 17 (internal ID: 0xB7E3), with mean quality: 32.89987; estimate based on 1 runs.
+15:31:15.371 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 17 (internal ID: 0xB7E3): 
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '61' -decay '0.002674127580601943' -ep '244' -lr '0.01820879250282386' -momentum '0.9168240396443637' -nh '921'  
+17:00:16.598 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 34 (internal ID: 0x1DE1E), with mean quality: 32.639792; estimate based on 1 runs.
+17:00:16.599 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 34 (internal ID: 0x1DE1E): 
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '50' -decay '0.0046572715313344185' -ep '192' -lr '0.09293153241136144' -momentum '0.5060506771458319' -nh '1050'  
+23:44:06.227 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 114 (internal ID: 0x4BE49), with mean quality: 32.596446; estimate based on 1 runs.
+23:44:06.227 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 114 (internal ID: 0x4BE49): 
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '78' -decay '0.0022721903789302564' -ep '243' -lr '0.03095674256045207' -momentum '0.5279632936201131' -nh '1072'  
+07:37:46.744 [main] INFO  c.u.c.b.a.e.h.LogRuntimeStatistics - *****Developer Statistics*****
+ Count: 20
+ Incumbent ID: 114 (internal ID:0x4BE49)
+ Number of PISPs for Incumbent: 1
+ Number of Instances for Incumbent: 1
+ Number of Configurations Run: 200
+ Performance of the Incumbent: 32.596
+ Configuration Time Budget used: 190.69 s (0%)
+ Configuration Time Budget remaining: 2.15E9 s
+ Wall-clock Time Budget used: 63003.92 s (0%)
+ Wall-clock Time Budget remaining: 2.15E9 s
+ Algorithm Runs used: 200.00  (100%)
+ Algorithm Runs remaining: 0.00 
+ Model/Iteration used: 19.00  (0%)
+ Model/Iteration remaining: 2.15E9 
+ Sum of Target Algorithm Execution Times (treating minimum value as 0.1): 20.000 s
+ CPU time of Configurator: 170.691 s
+ User time of Configurator: 170.691 s
+ Outstanding Runs on Target Algorithm Evaluator: 0
+ Outstanding Requests on Target Algorithm Evaluator: 0
+ Total Reported Algorithm Runtime: 0.000 s
+ Sum of Measured Wallclock Runtime: 62992.172 s
+ Max Memory: 910 MB
+ Total Java Memory: 216 MB
+ Free Java Memory: 176 MB
+ * PISP count is roughly the number of runs, but doesn't included redundant runs on the same problem instance & seed
+07:37:46.749 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+=======================================================================================
+SMAC has finished. Reason: algorithm run limit (200 runs) has been reached.   
+Total number of runs performed: 200, total configurations tried: 200.
+Total CPU time used: 191 s, total wallclock time used: 63004 s.
+SMAC's final incumbent: config 114 (internal ID: 0x4BE49), with estimated mean quality: 32.596446, based on 1 run(s) on 1 training instance(s).
+Sample call for this final incumbent:
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '78' -decay '0.0022721903789302564' -ep '243' -lr '0.03095674256045207' -momentum '0.5279632936201131' -nh '1072'
+=======================================================================================
+07:37:46.750 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Now starting offline validation.
+07:37:46.802 [main] INFO  c.u.c.beta.smac.validation.Validator - Validation needs 1 algorithm runs to validate 1 configurations found, each on 1 problem instance seed pairs
+07:37:46.803 [main] INFO  c.u.c.beta.smac.validation.Validator - Validation start time: 19-Nov-2015 07:37:46. Approximate worst-case end time is unknown.
+07:42:10.690 [CLI TAE Callback Threads (208-1)] INFO  c.u.c.beta.smac.validation.Validator - Validation Call Strings written to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/validationCallStrings-traj-run-1300-walltime.csv
+07:42:10.720 [CLI TAE Callback Threads (208-1)] INFO  c.u.c.beta.smac.validation.Validator - Instance performance (for debug) written to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/validationPerformanceDebug-traj-run-1300-walltime.csv
+07:42:10.723 [CLI TAE Callback Threads (208-1)] INFO  c.u.c.beta.smac.validation.Validator - Main validation results file written to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/validationResults-traj-run-1300-walltime.csv
+07:42:10.736 [CLI TAE Callback Threads (208-1)] INFO  c.u.c.beta.smac.validation.Validator - Validation matrix of objectives for cross-product of configurations and (instance,seed) pairs written to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/validationObjectiveMatrix-traj-run-1300-walltime.csv
+07:42:10.736 [CLI TAE Callback Threads (208-1)] INFO  c.u.c.beta.smac.validation.Validator - Validation matrix of complete run result line for cross-product of configurations and (instance,seed) pairs written to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ/validationRunResultLineMatrix-traj-run-1300-walltime.csv
+07:42:10.742 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Estimated mean quality of final incumbent config 114 (internal ID: 0x4BE49) on test set: 32.596446, based on 1 run(s) on 1 test instance(s).
+Sample call for the final incumbent:
+cd /homes/mb2215/Documents/Dynamical_Systems/Coursework/2; ./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '78' -decay '0.0022721903789302564' -ep '243' -lr '0.03095674256045207' -momentum '0.5279632936201131' -nh '1072' 
+Additional information about run 1300 in:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

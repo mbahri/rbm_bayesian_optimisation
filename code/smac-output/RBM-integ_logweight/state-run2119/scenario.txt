@@ -1,0 +1,5 @@
+use-instances = false
+numberOfRunsLimit = 150 
+runObj = QUALITY
+pcs-file = rbm_integ_logweight.pcs
+algo = ./wrapper.sh

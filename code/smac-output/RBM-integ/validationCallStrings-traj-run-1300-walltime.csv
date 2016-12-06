@@ -1,0 +1,2 @@
+"Validation Configuration ID","Configuration ","Sample Call String"
+"1","-bs '78' -decay '0.0022721903789302564' -ep '243' -lr '0.03095674256045207' -momentum '0.5279632936201131' -nh '1072'","./wrapper.sh no_instance 0 1.7976931348623157E308 2147483647 -1 -bs '78' -decay '0.0022721903789302564' -ep '243' -lr '0.03095674256045207' -momentum '0.5279632936201131' -nh '1072' "

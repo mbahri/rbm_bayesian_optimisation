@@ -1,0 +1,465 @@
+02:16:40.822 [main] INFO  c.u.c.b.a.l.ComplexLoggingOptions - Logging to: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg/log-run45632.txt
+02:16:40.828 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Algorithm Execution & Abstraction Toolkit is v2.10.03-master-814 (ebf4c8c913d5) 
+02:16:40.829 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Java Runtime Environment is Java HotSpot(TM) 64-Bit Server VM (1.7.0_79) 
+02:16:40.829 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of OS is Linux 3.13.0-63-generic (amd64) 
+02:16:40.829 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Random Forest Library is v1.10.01-master-120 (b68439c2c391) 
+02:16:40.829 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of SMAC is v2.10.03-master-778 (3ee628ef9bf2) 
+02:16:40.829 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - Call String: smac --scenario-file RBM-integ_noreg.txt --seed 45632 
+02:16:40.829 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ********** The next bit of output can be ignored, it is merely useful for debugging **********
+02:16:40.829 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========Enviroment Variables===========
+ARCH=x86_64
+CWB=/vol/lab/mac/CWB7.0
+EDITOR=nedit
+EXCONFIG=/vol/lab/mac/lib/exercise.cf
+GETPATH=/vol/lab/mac/give:/vol/lab/give:/vol/lab/lib:/vol/lab/include
+GROUPDIR=/vol/lab/mac
+HISTSIZ=500
+HOME=/homes/mb2215
+IGNOREEOF=1
+LANG=en_GB.UTF-8
+LOCALLAB=/vol/lab
+LOGNAME=mb2215
+MAIL=/homes/mb2215/.email
+MANPATH=/vol/lab/man:/vol/lab/mac/cadence/smv/man:/vol/lab/qp8.6/doc/man:/usr/share/man:/usr/local/man:/vol/lab/mac/doc/man
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NSS_DEFAULT_DB_TYPE=sql
+OS=Linux
+OTTER_DOC=/usr/share/doc/otter/
+OTTER_EX=/usr/share/otter/examples/
+PATH=/homes/mb2215/.virtualenvs/scientific_python/bin:/vol/lab/CLASP:/vol/lab/mac/cadence/smv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/vol/lab/mac/bin:/bin:/vol/lab/bin:/vol/lab/bin/Linux/x86_64:/vol/lab/qp8.6/bin:/vol/lab/satsolvers/bin:/vol/lab/satsolvers/bin/
+PGHOST=db
+PGPASSWORD=lab
+PGPORT=5432
+PGUSER=lab
+PRINTER=ICTMono
+PWD=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+QPHOME=/vol/lab/qp8.6
+QPPATH=/vol/lab/qp8.6/bin
+QTDIR=/usr/lib/qt3
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+SHELL=/bin/bash
+SHLVL=2
+SSH_AGENT_PID=19215
+SSH_AUTH_SOCK=/tmp/ssh-lc1S5QsnxjTw/agent.19214
+SSH_CLIENT=146.169.21.39 45559 22
+SSH_CONNECTION=146.169.21.39 45559 146.169.53.41 22
+SSH_TTY=/dev/pts/2
+STY=19221.pts-2.line01
+TERM=screen
+TERMCAP=SC|screen|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#53:co#181:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mr=\E[7m:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:Km=\E[M:k0=\E[10~:k1=\EOP:k2=\EOQ:\
+	:k3=\EOR:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:\
+	:k8=\E[19~:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:\
+	:F3=\E[1;2P:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:\
+	:F7=\E[15;2~:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:\
+	:K2=\EOE:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:\
+	:*7=\E[1;2F:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:\
+	:%e=\E[5;2~:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:\
+	:@7=\E[4~:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:\
+	:kd=\EOB:kr=\EOC:kl=\EOD:km:
+TEXINPUTS=.:/vol/lab/tex/inputs:
+TMOUT=0
+USER=mb2215
+USE_EDITOR=nedit
+VIRTUALENVWRAPPER_HOOK_DIR=/homes/mb2215/.virtualenvs
+VIRTUALENVWRAPPER_PROJECT_FILENAME=.project
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+VIRTUAL_ENV=/homes/mb2215/.virtualenvs/scientific_python
+VISUAL=nedit
+WINDOW=0
+WORKON_HOME=/homes/mb2215/.virtualenvs
+XDG_RUNTIME_DIR=/run/user/11916
+XDG_SESSION_COOKIE=2d56b2c2c29f1750a66fd63c53a1b52d-1447985568.702755-1323255940
+XDG_SESSION_ID=2358
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+more=/bin/more
+
+02:16:40.829 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Hostname:line01.doc.ic.ac.uk
+02:16:40.830 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========System Properties==============
+ERRLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg/log-err45632.txt
+NUMRUN=45632
+OUTPUTDIR=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg
+ROOT-LEVEL=INFO
+RUNLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg/log-run45632.txt
+STDOUT-LEVEL=INFO
+WARNLOG=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg/log-warn45632.txt
+awt.toolkit=sun.awt.X11.XToolkit
+file.encoding=UTF-8
+file.encoding.pkg=sun.io
+file.separator=/
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.awt.printerjob=sun.print.PSPrinterJob
+java.class.path=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/conf/:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/patches/:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/aeatk.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/aeatk-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-collections-3.2.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-collections-3.2.1-sources.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-io-2.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-math-2.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/commons-math3-3.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/DomainInter.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/exp4j-0.3.10.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/exp4j-0.4.3.BETA-3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/fastrf.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/fastrf-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/guava-14.0.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-annotations-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-core-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jackson-databind-2.3.1.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/Jama-1.0.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcip-annotations.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcip-annotations-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jcommander.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/jmatharray.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-access-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-classic-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/logback-core-1.1.2.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/numerics4j-1.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/opencsv-2.3.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/slf4j-api-1.7.5.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/smac.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/smac-src.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/lib/spi-0.2.4.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/*.jar:/homes/mb2215/Documents/Dynamical_Systems/Coursework/2/patches/
+java.class.version=51.0
+java.endorsed.dirs=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/endorsed
+java.ext.dirs=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/ext:/usr/java/packages/lib/ext
+java.home=/usr/lib/jvm/jdk-7-oracle-x64/jre
+java.io.tmpdir=/tmp
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.runtime.name=Java(TM) SE Runtime Environment
+java.runtime.version=1.7.0_79-b15
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=1.7
+java.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+java.version=1.7.0_79
+java.vm.info=mixed mode
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.7
+java.vm.vendor=Oracle Corporation
+java.vm.version=24.79-b02
+line.separator=
+
+logback.configurationFile=ca/ubc/cs/beta/aeatk/logging/complex-logback.xml
+os.arch=amd64
+os.name=Linux
+os.version=3.13.0-63-generic
+path.separator=:
+sun.arch.data.model=64
+sun.boot.class.path=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/resources.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/rt.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jsse.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jce.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/charsets.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/jfr.jar:/usr/lib/jvm/jdk-7-oracle-x64/jre/classes
+sun.boot.library.path=/usr/lib/jvm/jdk-7-oracle-x64/jre/lib/amd64
+sun.cpu.endian=little
+sun.cpu.isalist=
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ca.ubc.cs.beta.aeatk.ant.execscript.Launcher ca.ubc.cs.beta.smac.executors.SMACExecutor --scenario-file RBM-integ_noreg.txt --seed 45632
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=UTF-8
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=unknown
+user.country=GB
+user.dir=/homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+user.home=/homes/mb2215
+user.language=en
+user.name=mb2215
+user.timezone=Europe/London
+
+02:16:40.848 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - ==========Configuration Options==========
+[SMACOptions]
+ adaptiveCapping = false
+ alwaysRunInitialConfiguration = false
+ capAddSlack = 1.0
+ capSlack = 1.3
+classicInitModeOpts = [ClassicInitializationProcedureOptions]
+		 initialIncumbentRuns = 1
+
+dciModeOpts = [DoublingCappingInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+
+ucip = [UnbiasChallengerInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+		 cpulimit = 0
+
+ deterministicInstanceOrdering = false
+ doValidation = true
+ execMode = SMAC
+ experimentDir = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/
+ expFunc = null
+help = [HelpOptions]
+		 showHiddenParameters = false
+		 showHelp = false
+		 helpLevel = BASIC
+		 showVersion = false
+		 helpDefaults = /homes/mb2215/.aeatk/help.opt
+
+ initialChallengeRuns = 1
+ initialIncumbent = DEFAULT
+ initializationMode = CLASSIC
+ intensificationPercentage = 0.5
+ initialChallengers = []
+ initialChallengersIntensificationTime = 2147483647
+ iterativeCappingBreakOnFirstCompletion = false
+ iterativeCappingK = 1
+logOptions = [ComplexLoggingOptions]
+		 consoleLogLevel = INFO
+		 logLevel = INFO
+
+ maxIncumbentRuns = 2000
+mbOptions = [ModelBuildingOptions]
+		 maskCensoredDataAsKappaMax = false
+		 maskInactiveConditionalParametersAsDefaultValue = true
+		 maskCensoredDataAsUncensored = false
+		 imputationIterations = 2
+
+ modelHashCodeFile = null
+ numberOfChallengers = 10
+ numberOfRandomConfigsInEI = 10000
+ numberOfRandomConfigsUsedForLocalSearch = 0
+ numPCA = 7
+ optionFile = null
+ optionFile2 = null
+randomForestOptions = [RandomForestOptions]
+		 brokenVarianceCalculation = false
+		 freeMemoryPercentageToSubsample = 0.25
+		 fullTreeBootstrap = false
+		 ignoreConditionality = false
+		 imputeMean = false
+		 logModel = false
+		 minVariance = 1.0E-14
+		 numTrees = 10
+		 penalizeImputedValues = false
+		 preprocessMarginal = true
+		 ratioFeatures = 0.8333333333333334
+		 shuffleImputedValues = false
+		 splitMin = 10
+		 storeDataInLeaves = false
+		 subsamplePercentage = 0.9
+		 subsampleValuesWhenLowMemory = false
+
+runGroupOptions = [RunGroupOptions]
+		 runGroupName = %SCENARIO_NAME
+		 runGroupExit = false
+		 replacementChar = %
+
+scenarioConfig = [ScenarioOptions]
+		 _runObj = QUALITY
+		 intraInstanceObj = null
+		 interInstanceObj = MEAN
+		limitOptions = [TerminationCriteriaOptions]
+				 tunerTimeout = 2147483647
+				 numIterations = 2147483647
+				 runtimeLimit = 2147483647
+				 totalNumRunsLimit = 150
+				 countSMACTimeAsTunerTime = true
+				 challengeIncumbentAttempts = 1000
+				 fileToWatch = null
+
+		instanceOptions = [ProblemInstanceOptions]
+				 instanceFile = null
+				 instanceFeatureFile = null
+				 testInstanceFile = null
+				 checkInstanceFilesExist = false
+				 useInstances = false
+				 instanceSuffix = null
+				 testInstanceSuffix = null
+				 ignoreFeatures = false
+
+		 scenarioFile = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/RBM-integ_noreg.txt
+		 outputDirectory = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output
+		 invalidScenarioReason = null
+		algoExecOptions = [AlgorithmExecutionOptions]
+				 algoExec = ./wrapper_noreg.sh
+				 algoExecDir = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2
+				 deterministic = true
+				 cutoffTime = 1.7976931348623157E308
+				 cutoffLength = -1.0
+				 additionalContext = {}
+				taeOpts = [TargetAlgorithmEvaluatorOptions]
+						 targetAlgorithmEvaluator = CLI
+						 abortOnCrash = false
+						 abortOnFirstRunCrash = true
+						 retryCount = 0
+						 cacheRuns = false
+						 cacheDebug = false
+						 useDynamicCappingExclusively = false
+						 reportStrictlyIncreasingRuntimes = false
+						 boundRuns = false
+						 maxConcurrentAlgoExecs = 1
+						 exitOnFailure = false
+						 runHashCodeFile = null
+						 leakMemory = false
+						 leakMemoryAmount = 1024
+						 verifySAT = null
+						 checkSATConsistency = true
+						 checkSATConsistencyException = true
+						 callObserverBeforeCompletion = true
+						prePostOptions = [PrePostCommandOptions]
+								 preCommand = null
+								 postCommand = null
+								 exceptionOnError = false
+								 logOutput = true
+								 directory = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/.
+
+						 checkResultOrderConsistent = false
+						 skipOutstandingEvaluationsTAE = false
+						 logRequestResponses = false
+						 logRequestResponsesRCOnly = false
+						 trackRunsScheduled = false
+						 trackRunsScheduledResolution = 1.0
+						 uncleanShutdownCheck = true
+						 killCaptimeExceedingRun = true
+						 killCaptimeExceedingRunFactor = 10.0
+						 checkRunConfigsUnique = true
+						 checkRunConfigsUniqueException = true
+						 observeWalltimeIfNoRuntime = true
+						 observeWalltimeScale = 0.95
+						 observeWalltimeDelay = 5.0
+						 synchronousObserver = true
+						 taeDefaults = /homes/mb2215/.aeatk/tae.opt
+						ttaedo = [TransformTargetAlgorithmEvaluatorDecoratorOptions]
+								 transform = false
+								 transformValidValuesOnly = true
+								 SAT_runtime_transform = R
+								 SAT_quality_transform = Q
+								 UNSAT_runtime_transform = R
+								 UNSAT_quality_transform = Q
+								 TIMEOUT_runtime_transform = R
+								 TIMEOUT_quality_transform = Q
+								 other_runtime_transform = R
+								 other_quality_transform = Q
+
+						tForkOptions = [ForkingTargetAlgorithmEvaluatorDecoratorOptions]
+								 forkToTAE = null
+								fPolicyOptions = [ForkingTargetAlgorithmEvaluatorDecoratorPolicyOptions]
+										 fPolicy = null
+										 duplicateOnSlaveQuickTimeout = 5
+
+
+						 fileToWatch = null
+						 warnIfNoResponseFromTAE = 120
+						 taeStopProcessingOnShutdown = true
+						 filecache = false
+						 fileCacheSource = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/./runcache
+						 fileCacheOutput = /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/./runcache
+						 fileCacheCrashOnMiss = false
+						 transformCrashedQuality = true
+						 transformCrashedQualityValue = 1.0E9
+						 filterZeroCutoffRuns = true
+
+				paramFileDelegate = [ParamConfigurationSpaceOptions]
+						 paramFile = rbm_integ_noreg.pcs
+						 searchSubspace = null
+						 searchSubspaceFile = null
+						 continuousNeighbours = 4
+
+
+
+seedOptions = [SeedOptions]
+		 seedOffset = 0
+		 numRun = 45632
+		 initialSeedMap = {}
+
+ smacDefaults = /homes/mb2215/.aeatk/smac.opt
+stateOpts = [StateFactoryOptions]
+		 stateSerializer = LEGACY
+		 statedeSerializer = LEGACY
+		 restoreStateFrom = null
+		 restoreIteration = null
+		 restoreScenario = null
+		 cleanOldStatesOnSuccess = true
+		 saveContextWithState = true
+
+trackingOptions = [ParamConfigurationOriginTrackingOptions]
+		 configTracking = false
+
+validationOptions = [ValidationOptions]
+		 maxTimestamp = -1.0
+		 minTimestamp = 0.0
+		 multFactor = 2.0
+		 numberOfTestInstances = 2147483647
+		 numberOfTestSeedsPerInstance = 1000
+		 numberOfValidationRuns = 1
+		 outputFileSuffix = 
+		 saveStateFile = false
+		 useWallClockTime = true
+		 validateAll = false
+		 validateOnlyIfTunerTimeReached = 0.0
+		 validateOnlyIfWallTimeReached = 0.0
+		 validateOnlyLastIncumbent = true
+		 validationHeaders = true
+		 validationRoundingMode = UP
+
+warmStartOptions = [WarmStartOptions]
+		 warmStartStateFrom = null
+		 restoreIteration = 2147483647
+
+ validationSeed = 0
+ saveRunsEveryIteration = false
+ stateQuickSaves = true
+ shutdownTAEWhenDone = true
+ validationCores = null
+ shareModelMode = false
+ shareRunDataFrequency = 300
+ shareModeModeTAE = true
+ writeRunData = true
+ defaultHandler = USE_ALL
+ sharedModeModeAssymetricMode = false
+
+[AnalyticTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ cores = 0
+ observerFrequency = 100
+ func = CAMELBACK
+ scaleDelay = 1.0
+
+[BlackHoleTargetAlgorithmEvaluatorOptions]
+ warnings = true
+
+[CommandLineTargetAlgorithmEvaluatorOptions]
+ observerFrequency = 500
+ concurrentExecution = true
+ cores = 1
+ logAllCallStrings = false
+ logAllResultLines = false
+ logAllCallsAndResultLines = false
+ logAllProcessOutput = false
+ listenForUpdates = true
+ paramArgumentsContainQuotes = false
+ pgEnvKillCommand = null
+ pgNiceKillCommand = bash -c "kill -s TERM -%pid"
+ pgForceKillCommand = bash -c "kill -s KILL -%pid"
+ procNiceKillCommand = kill -s TERM %pid
+ procForceKillCommand = kill -s KILL %pid
+ smacDefaults = /homes/mb2215/.aeatk/cli-tae.opt
+
+[ConstantTargetAlgorithmEvaluatorOptions]
+ runResult = SAT
+ runtime = 1.0
+ quality = 0.0
+ runlength = 0.0
+ additionalRunData = 
+
+[IPCTargetAlgorithmEvaluatorOptions]
+ persistent = false
+ ipcMechanism = UDP
+ encodingMechanism = CALL_STRING
+ remoteHost = 127.0.0.1
+ remotePort = 5050
+ udpPacketSize = 4096
+ localPort = 0
+ execScript = null
+ execScriptOutput = false
+ poolConnections = false
+ ipcDefaults = /homes/mb2215/.aeatk/ipc-tae.opt
+ asyncThreads = 9
+
+[PreloadedResponseTargetAlgorithmEvaluatorOptions]
+ preloadedResponses = 
+ runLength = -1.0
+ quality = 0.0
+ additionalRunData = 
+
+[RandomResponseTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ additionalRunData = 
+ cores = 0
+ maxResponse = 10.0
+ minResponse = 0.0
+ observerFrequency = 500
+ trendCoefficient = 0.0
+ seed = 1447985800456
+ persistent = false
+ scaleDelay = 1.0
+
+
+02:16:40.877 [main] INFO  c.u.c.b.a.s.l.LegacyStateFactory - Found previous run data in state output folder: /homes/mb2215/Documents/Dynamical_Systems/Coursework/2/smac-output/RBM-integ_noreg , renamed to: old-state-state-run45632-1447985800876
+02:16:41.009 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - SMAC started at: 20-Nov-2015 02:16:41. Minimizing mean quality.

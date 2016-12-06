@@ -1,0 +1,44 @@
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+ 
+For online documentation, see http://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+	Academic License
+Beginning tests: grid search with mean over ten runs
+nh =
+        1000
+lr =
+    0.0100
+bs =
+   100
+ep =
+   250
+Testing...
+Error: 40.008669%
+Testing...
+Error: 40.268747%
+Testing...
+Error: 38.188123%
+Testing...
+Error: 40.268747%
+Testing...
+Error: 38.925011%
+Testing...
+Error: 40.485479%
+Testing...
+Error: 39.791938%
+Testing...
+Error: 40.528825%
+Testing...
+Error: 40.095362%
+Testing...
+Error: 41.092328%
+Results for RBM with:
+	1000 hidden units
+	0.010000 learning rate
+	100 batch size
+	250 epochs
+ean error: 0.399653

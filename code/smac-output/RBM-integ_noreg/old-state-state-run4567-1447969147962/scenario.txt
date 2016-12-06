@@ -1,0 +1,5 @@
+use-instances = false
+numberOfRunsLimit = 200 
+runObj = QUALITY
+pcs-file = rbm_integ_noreg.pcs
+algo = ./wrapper_noreg.sh
